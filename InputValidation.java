@@ -38,16 +38,20 @@ public class InputValidation{
       }
     }
     System.out.println(amountOfParties);
-  
+    
   
   
   
   System.out.println("Mon\tTues\tWed\tThurs\tFri\tSat\tSun");
-    int amountOfParties;
-   do{
-      System.out.print(flavorsPerDay+"\t");
-       flavorsPerDay+=flavorsPerDay;
-      }while(amountOfParties);
-    
-  }
+    int count=1;
+    while ( count <= amountOfParties){
+      if (count%7==1){
+        System.out.print("\n");
+      }
+      System.out.print(count*flavorsPerDay + "\t");
+      count++;
+
+        
+      }
+   }
 }
